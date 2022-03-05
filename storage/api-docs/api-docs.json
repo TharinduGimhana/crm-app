@@ -1,0 +1,114 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel OpenApi Demo Documentation",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "admin@admin.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000/",
+            "description": "Demo API Server"
+        }
+    ],
+    "paths": {
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "description": "Register",
+                "operationId": "8a56853624e025573120a09a4c75d468",
+                "responses": {
+                    "default": {
+                        "description": "Register"
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "description": "Login",
+                "operationId": "a3b306d14572d1f4bd6c064b3233e7b8",
+                "responses": {
+                    "default": {
+                        "description": "Login"
+                    }
+                }
+            }
+        },
+        "/api/me": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "description": "Get authenticated user",
+                "operationId": "3fc3f2f762fb3c5ecf211fcb0d4f81ff",
+                "responses": {
+                    "default": {
+                        "description": "Get authenticated user"
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Get users",
+                "operationId": "4db02f0d9ccd97469981e0cb03d1a41e",
+                "responses": {
+                    "default": {
+                        "description": "Get users"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Update users",
+                "operationId": "44ef8e462d8ae5a22c33a489a3259373",
+                "responses": {
+                    "default": {
+                        "description": "Update users"
+                    }
+                }
+            }
+        },
+        "/users": {
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Delete user",
+                "operationId": "4cd6558e92130b6801c0a768a183dbdc",
+                "responses": {
+                    "default": {
+                        "description": "Delete user"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Projects",
+            "description": "API Endpoints of Projects"
+        }
+    ],
+    "security": [
+        []
+    ]
+}
